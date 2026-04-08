@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luis Ramírez | CV Profesional</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #eaf2ff, #f8fbff);
+      color: #1f2937;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(15, 76, 129, 0.14);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f4c81, #2563eb, #1d4ed8);
+      color: white;
+      padding: 40px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      border: 4px solid rgba(255,255,255,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 54px;
+      font-weight: bold;
+      color: white;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.8rem;
+      line-height: 1.1;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+      opacity: 0.96;
+    }
+
+    .hero p {
+      margin: 14px 0 0 0;
+      font-size: 1rem;
+      max-width: 800px;
+      opacity: 0.95;
+    }
+
+    .quick-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 0;
+    }
+
+    .sidebar {
+      background: #f8fbff;
+      padding: 30px 26px;
+      border-right: 1px solid #e5eefb;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h3 {
+      margin: 0 0 14px 0;
+      font-size: 1.2rem;
+      color: #0f4c81;
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 8px;
+    }
+
+    .contact a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .contact p,
+    .sidebar p {
+      margin: 0 0 10px 0;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #e8f0ff;
+      color: #163d8f;
+      padding: 9px 12px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .timeline-item {
+      background: #fbfdff;
+      border: 1px solid #e5eefb;
+      border-left: 5px solid #2563eb;
+      border-radius: 14px;
+      padding: 18px 18px 16px 18px;
+      margin-bottom: 16px;
+    }
+
+    .timeline-item h4 {
+      margin: 0 0 6px 0;
+      font-size: 1.08rem;
+      color: #111827;
+    }
+
+    .timeline-item .meta {
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: #374151;
+    }
+
+    ul {
+      margin: 10px 0 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #eff6ff, #f8fbff);
+      border: 1px solid #dbeafe;
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 18px;
+      border-top: 1px solid #e5eefb;
+      color: #6b7280;
+      background: #fcfdff;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .photo {
+        margin: 0 auto;
+      }
+
+      .quick-info {
+        justify-content: center;
+      }
+
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e5eefb;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="photo">
+          LR
+          <!-- Si quieres poner foto, sustituye lo de arriba por:
+          <img src="foto.jpg" alt="Luis Ramírez">
+          -->
+        </div>
+
+        <div>
+          <h1>Luis Ramírez</h1>
+          <h2>Profesor de IA, TIC y Educación STEAM</h2>
+          <p>
+            Docente con amplia experiencia en innovación educativa, cultura científica,
+            tecnología y metodologías activas. Especializado en integrar inteligencia
+            artificial, programación y proyectos STEAM en el aula de forma práctica,
+            crítica y motivadora.
+          </p>
+
+          <div class="quick-info">
+            <div class="pill">📍 Cádiz, España</div>
+            <div class="pill">🤖 IA educativa</div>
+            <div class="pill">💻 TIC y programación</div>
+            <div class="pill">🚀 Proyectos STEAM</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <aside class="sidebar">
+        <section class="section contact">
+          <h3>Contacto</h3>
+          <p><strong>Ubicación:</strong> Cádiz, España</p>
+          <p>
+            <strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/luravi" target="_blank">
+              linkedin.com/in/luravi
+            </a>
+          </p>
+          <p>
+            <strong>Web / Proyecto:</strong><br>
+            <a href="https://steamluravichat.vercel.app" target="_blank">
+              steamluravichat.vercel.app
+            </a>
+          </p>
+        </section>
+
+        <section class="section">
+          <h3>Competencias</h3>
+          <div class="tag-list">
+            <div class="tag">Inteligencia Artificial</div>
+            <div class="tag">Educación STEAM</div>
+            <div class="tag">micro:bit</div>
+            <div class="tag">MakeCode</div>
+            <div class="tag">Canva</div>
+            <div class="tag">Diseño didáctico</div>
+            <div class="tag">Ciudadanía digital</div>
+            <div class="tag">Robótica educativa</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Fortalezas</h3>
+          <ul>
+            <li>Diseño de proyectos reales y motivadores</li>
+            <li>Aplicación ética y práctica de la IA</li>
+            <li>Experiencia en Secundaria, Bachillerato y CFGB</li>
+            <li>Materiales claros, evaluables y transferibles al aula</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="section">
+          <h3>Perfil profesional</h3>
+          <div class="highlight-box">
+            Profesor con larga trayectoria docente y fuerte orientación a la innovación.
+            Combina ciencia, tecnología, pensamiento crítico y creatividad para preparar
+            al alumnado para el mundo real. Especial interés en la enseñanza de la IA,
+            la programación y el diseño de experiencias educativas significativas.
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Experiencia destacada</h3>
+
+          <div class="timeline-item">
+            <h4>Profesor de TIC, Cultura Científica y Tecnología</h4>
+            <div class="meta">Docencia e innovación educativa</div>
+            <p>
+              Desarrollo de situaciones de aprendizaje, proyectos narrativos y tareas
+              competenciales centradas en cultura digital, ciencia, tecnología,
+              sostenibilidad, programación y ciudadanía crítica.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Especialista en Inteligencia Artificial educativa</h4>
+            <div class="meta">Aplicación pedagógica de la IA</div>
+            <p>
+              Integración de herramientas de IA en el aula con enfoque ético,
+              didáctico y práctico. Diseño de actividades donde la IA apoya el
+              aprendizaje sin sustituir la comprensión del alumnado.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Diseñador de proyectos STEAM</h4>
+            <div class="meta">Aprendizaje activo y contextualizado</div>
+            <p>
+              Creación de experiencias educativas basadas en retos, proyectos
+              interdisciplinares, robótica, micro:bit y análisis de problemas reales
+              conectados con el entorno del alumnado.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Logros y aportaciones</h3>
+          <ul>
+            <li>Diseño de proyectos propios con identidad narrativa y gran motivación para el alumnado.</li>
+            <li>Uso práctico de la IA, no como adorno, sino como herramienta real de aprendizaje.</li>
+            <li>Creación de rúbricas, materiales, fichas y productos listos para aula.</li>
+            <li>Impulso de la evaluación centrada en la comprensión y la huella personal del estudiante.</li>
+            <li>Aplicación de tecnología educativa con visión crítica, ética y realista.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>Proyecto destacado</h3>
+          <div class="timeline-item">
+            <h4>MeteorSat-Cádiz | Misión Científica Educativa</h4>
+            <div class="meta">Ciencia, datos reales y tecnología</div>
+            <p>
+              Proyecto educativo basado en el diseño y análisis de un minisatélite
+              escolar con micro:bit, contextualizado en la Bahía de Cádiz. Integra
+              método científico, sensores, interpretación de datos, programación y
+              presentación de resultados.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      CV web de Luis Ramírez · Diseñado en HTML y CSS
+    </footer>
+  </div>
+</body>
+</html>
